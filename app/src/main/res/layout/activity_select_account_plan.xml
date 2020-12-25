@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waves1"
+    tools:context=".SelectAccountPlan">
+
+    <ImageView
+        android:layout_width="121dp"
+        android:layout_height="92dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/vocalforlocal_final2"
+        app:layout_constraintBottom_toTopOf="@+id/groupRadio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupRadio"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Plan ?"
+        android:textColor="@color/blue2"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="170dp"
+        android:textSize="20dp" />
+
+    <!-- add RadioGroup which contain the many RadioButton-->
+    <RadioGroup
+        android:layout_marginTop="200dp"
+        android:id="@+id/groupRadio"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- In RadioGroup create the 1 Radio Button-->
+        <!-- like this we will add some more Radio Button-->
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_id1"
+            android:text="1 Month, @Rs. 30/-"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_id2"
+            android:text="2 Months, @Rs. 60/-"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radi0_id3"
+            android:text="6 Months, @Rs. 150/-"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_id4"
+            android:text="1 Year, @Rs. 300/-"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_id5"
+            android:text="Cancel Subscriptions"
+            android:textSize="20dp"/>
+    </RadioGroup>
+
+    <!-- add button For Submit the Selected item-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/blue1"
+        android:text="Next"
+        android:id="@+id/submit"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp" />
+
+    <!-- add clear button for clear the selected item-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/blue1"
+        android:text="Clear Selection"
+        android:id="@+id/clear"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="440dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/blue1"
+        android:text="Cancel"
+        android:id="@+id/btnBackToHome"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

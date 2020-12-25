@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/waves1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            tools:context=".OwnerUpdateDetails">
+
+            <TextView
+                android:id="@+id/TxtType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upAddress" />
+
+            <TextView
+                android:id="@+id/TxtDistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upAddress" />
+
+            <TextView
+                android:id="@+id/TxtState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upAddress" />
+
+            <EditText
+                android:id="@+id/upOwnerName"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_default"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Shop Owner Name"
+                android:inputType="textCapCharacters"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:padding="10dp"
+                android:textColor="@color/blue1"
+                android:textColorHint="@color/dark_cyan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.01" />
+
+            <EditText
+                android:id="@+id/upShopName"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_default"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Shop Name"
+                android:inputType="textCapCharacters"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:padding="10dp"
+                android:textColor="@color/blue1"
+                android:textColorHint="@color/dark_cyan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.143" />
+
+            <EditText
+                android:id="@+id/upPhone"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_default"
+                android:digits="0123456789"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Shop Phone Number"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/blue1"
+                android:textColorHint="@color/dark_cyan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.287" />
+
+            <EditText
+                android:id="@+id/upAddress"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_default"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Complete Address of Shop"
+                android:inputType="textCapCharacters"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:padding="10dp"
+                android:textColor="@color/blue1"
+                android:textColorHint="@color/dark_cyan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.435" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="650dp"
+                android:background="@drawable/btn_shape"
+                android:gravity="center"
+                android:text="Update"
+                android:textColor="@color/blue1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.013"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnLog"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="650dp"
+                android:background="@drawable/btn_shape"
+                android:gravity="center"
+                android:text="Log Out"
+                android:textColor="@color/blue1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.945"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.6" />
+
+            <Button
+                android:id="@+id/btnupt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn_shape"
+                android:padding="15dp"
+                android:text="Want to Update State and District?? Click Me !!"
+                android:textColor="@color/blue1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TxtDistrict"
+                app:layout_constraintVertical_bias="0.102" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

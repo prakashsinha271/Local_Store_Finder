@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/waves1"
+    tools:context=".Feedback" >
+
+    <ImageView
+        android:layout_width="121dp"
+        android:layout_height="92dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/vocalforlocal_final2" />
+
+    <EditText
+        android:id="@+id/mailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_round"
+        android:hint="Email"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/subjectID"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_default"
+        android:textColor="@color/blue1"
+        android:padding="15dp"
+        android:visibility="invisible"
+        android:hint="Subject"/>
+
+    <EditText
+        android:id="@+id/messageID"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_default"
+        android:textColor="@color/blue1"
+        android:hint="Message"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnnsend"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/blue1"
+        android:text="Send Feedback" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.store.finder">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/vocalforlocal_final2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/vocalforlocal_final2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UploadImage" />
+        <activity android:name=".CustRating" />
+        <activity android:name=".OwnerMobileRegister" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RequestCallBack" />
+        <activity android:name=".SendTextMessage" />
+        <activity android:name=".ListviewCallChat" />
+        <activity android:name=".OwnerStateDistrictUpdate" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".VerifyPhoneActivity" />
+        <activity android:name=".VerifyOTPRecover" />
+        <activity android:name=".ShopList" />
+        <activity android:name=".SelectAccountPlan" />
+        <activity android:name=".RecoverPasswordVerify" />
+        <activity android:name=".OwnerWelcome" />
+        <activity android:name=".OwnerUpdateDetails" />
+        <activity android:name=".OwnerRegister" />
+        <activity android:name=".OwnerHome" />
+        <activity android:name=".OwnerDetailsActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DeleteRegisteredOwner" />
+        <activity android:name=".CustomerSearch" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".AdminAddShopType" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

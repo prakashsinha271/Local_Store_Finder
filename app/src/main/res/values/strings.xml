@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Local Store Finder</string>
+    <string name="customerBuyer">"Customer/Buyer (  ग्राहक )"</string>
+    <string name="ownerSeller">"Owner/Seller  ( विक्रेता )"</string>
+</resources>

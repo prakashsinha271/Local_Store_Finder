@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/waves1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HelpActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:shadowColor="#F5A623"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="8"
+        android:text="Welcome to Local Store Finder\n( स्थानीय दुकान खोजक )"
+        android:textColor="@color/blue1"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <Spinner
+        android:id="@+id/SpinnerSubject"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+        <RelativeLayout
+            android:id="@+id/RLAddNewShop"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SpinnerSubject"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/tvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="If you are confirm that your shop type is not listed on our list, please suggest us by entering following details-\nयदि आपको इस बात की पुष्टि हो जाती है कि आपकी दुकान का प्रकार हमारी सूची में सूचीबद्ध नहीं है, तो कृपया निम्नलिखित विवरण दर्ज करके हमें सुझाव दें-"
+                android:textColor="@color/blue"
+                android:padding="20dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.15" />
+
+            <EditText
+                android:id="@+id/shopTypeAddShop"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/tvv"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext_default"
+                android:gravity="center"
+                android:hint="Enter Shop Type (दुकान का नाम दर्ज करें)"
+                android:padding="10dp"
+                android:textColorHint="@color/dark_cyan" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLPassword"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerSubject"
+        app:layout_constraintVertical_bias="0.1" >
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Steps: To recover/change your password-\n1. Go to login page by clicking on &quot;Owner/Seller&quot; Button\n2. Then click on to &quot;Forgot password/Click Here&quot;\n3. Now enter your registered mobile number\n4. Wait for OTP, and then enter it on next page\n5. Now you have to enter new password on password change page\n6. Click &quot;Change&quot; button\n7. Your password has been change, and now you can login with new password\n\n\nStill have a problem,\nEnter your registered mobile number, We will call you within next 3 days except public holidays."
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLRegister"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerSubject"
+        app:layout_constraintVertical_bias="0.0" >
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="# Make sure you have entered correct mobile number during registration/account recover process.\n# You can not re-register/recover your account, if your account activation period got expired untill successful payment.\n# If your account have been purchased or you have trial account, please write us with following details-"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <EditText
+            android:id="@+id/issue"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittext_default"
+            android:gravity="center"
+            android:hint="Describe Your Problem"
+            android:padding="10dp"
+            android:textColorHint="@color/dark_cyan"
+            android:layout_below="@+id/tv3" />
+
+        <EditText
+            android:id="@+id/transNumber"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittext_default"
+            android:gravity="center"
+            android:hint="Transaction/Reference Number"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textColorHint="@color/dark_cyan"
+            android:layout_below="@+id/issue" />
+
+        <EditText
+            android:id="@+id/datePicker"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:gravity="center"
+            android:hint="Payment/Registration Date"
+            android:background="@drawable/edittext_default"
+            android:textColorHint="@color/dark_cyan"
+            android:layout_below="@id/transNumber"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLVerify"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerSubject"
+        app:layout_constraintVertical_bias="0.3" >
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enter your registered mobile number, We will call you within next 3 days except public holidays.\nअपना पंजीकृत मोबाइल नंबर दर्ज करें, हम आपको सार्वजनिक अवकाशों को छोड़कर अगले 3 दिनों के भीतर कॉल करेंगे।"
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLPayment"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerSubject"
+        app:layout_constraintVertical_bias="0.2" >
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="Please Explain your problem and enter registered mobile number.\nWe will call you within next 3 days except public holidays.\nकृपया अपनी समस्या बताएं और पंजीकृत मोबाइल नंबर दर्ज करें\nहम आपको सार्वजनिक अवकाशों को छोड़कर अगले 3 दिनों के भीतर कॉल करेंगे।"
+        android:textColor="@color/blue"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <EditText
+        android:id="@+id/verify"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_default"
+        android:gravity="center"
+        android:hint="Describe Your Problem"
+        android:padding="10dp"
+        android:textColorHint="@color/dark_cyan"
+        android:layout_below="@+id/tv5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLOther"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerSubject"
+        app:layout_constraintVertical_bias="0.2" >
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Please Explain your problem and enter mobile number.\nWe will call you within next 3 days except public holidays.\nकृपया अपनी समस्या बताएं और मोबाइल नंबर दर्ज करें\nहम आपको सार्वजनिक अवकाशों को छोड़कर अगले 3 दिनों के भीतर कॉल करेंगे।"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <EditText
+            android:id="@+id/other"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittext_default"
+            android:gravity="center"
+            android:hint="Describe Your Problem"
+            android:padding="10dp"
+            android:textColorHint="@color/dark_cyan"
+            android:layout_below="@+id/tv6" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLMobBtn"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RLAddNewShop"
+        app:layout_constraintVertical_bias="0.9">
+
+        <EditText
+            android:id="@+id/phoneMob"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/edittext_default"
+            android:digits="0123456789"
+            android:ellipsize="middle"
+            android:ems="12"
+            android:gravity="center"
+            android:hint="Enter Valid Mobile Number (वैध मोबाइल नंबर दर्ज करें)"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:textColorHint="@color/dark_cyan" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_shape"
+            android:layout_below="@+id/phoneMob"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
